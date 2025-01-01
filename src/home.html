@@ -4,147 +4,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/home.css" rel="stylesheet">
-    <title>Home</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <title>Portfolio - Kibreab</title>
 </head>
 
 <body>
     <header>
-        <div class="desktop-header tablet-header mobile-header">
-            <div class="desktop-socials tablet-socials">
+        <!-- Social Links -->
+        <div class="layout-desktop">
+            <div class="links">
                 <ul>
-                    <li>
-                        <a href="https://www.github.com">
-                            <img src="Images/icons/github.png" alt="Git-Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.leetcode.com">
-                            <img src="Images/icons/leetcode.png" alt="Leetcode-Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com">
-                            <img src="Images/icons/linkdin.png" alt="Linkdin-Icon">
-                        </a>
-                    </li>
+                    <li><a href="https://www.github.com" tabindex="0"><img src="Images/icons/github.png"
+                                alt="GitHub Icon"></a></li>
+                    <li><a href="https://www.leetcode.com" tabindex="0"><img src="Images/icons/leetcode.png"
+                                alt="LeetCode Icon"></a></li>
+                    <li><a href="https://www.linkedin.com" tabindex="0"><img src="Images/icons/linkdin.png"
+                                alt="LinkedIn Icon"></a></li>
+                </ul>
+            </div>
+            <div class="nav">
+                <nav class="navigation">
+                    <ul>
+                        <li class="active"><a href="#" tabindex="0">Home</a></li>
+                        <li><a href="./about.html" tabindex="0">About</a></li>
+                        <li><a href="./skills.html" tabindex="0">Skills</a></li>
+                        <li><a href="./blogs.html" tabindex="0">Blogs</a></li>
+                        <li><a href="./contact.html" tabindex="0">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+        <div class="layout-tablet hide-home-land">
+            <div class="nav">
+                <nav class="navigation">
+                    <ul>
+                        <li class="active"><a href="#" tabindex="0">Home</a></li>
+                        <li><a href="./about.html" tabindex="0">About</a></li>
+                        <li><a href="./skills.html" tabindex="0">Skills</a></li>
+                        <li><a href="./blogs.html" tabindex="0">Blogs</a></li>
+                        <li><a href="./contact.html" tabindex="0">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="https://www.github.com" tabindex="0"><img src="Images/icons/github.png"
+                                alt="GitHub Icon"></a></li>
+                    <li><a href="https://www.leetcode.com" tabindex="0"><img src="Images/icons/leetcode.png"
+                                alt="LeetCode Icon"></a></li>
+                    <li><a href="https://www.linkedin.com" tabindex="0"><img src="Images/icons/linkdin.png"
+                                alt="LinkedIn Icon"></a></li>
                 </ul>
             </div>
 
-            <input type="checkbox" id="menu-toggle" class="menu-toggle mobile-header">
-            <label for="menu-toggle" class="hamburger mobile-header">☰ Home</label>
-            <nav>
+
+
+        </div>
+
+
+
+        <!-- Mobile Menu -->
+        <div class="layout-mobile">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger" tabindex="0">☰ Home</label>
+            <nav class="navigation">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./skills.html">Skills</a></li>
-                    <li><a href="./blogs.html">Blogs</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li class="current"><a href="#" tabindex="0">Home</a></li>
+                    <li><a href="./about.html" tabindex="0">About</a></li>
+                    <li><a href="./skills.html" tabindex="0">Skills</a></li>
+                    <li><a href="./blogs.html" tabindex="0">Blogs</a></li>
+                    <li><a href="./contact.html" tabindex="0">Contact</a></li>
                 </ul>
             </nav>
         </div>
+
+
+        <!-- Navigation -->
+
     </header>
+
     <main>
-        <div id="desktop-main">
-            <section id="Home">
-                <h1>Hello!</h1>
-                <audio controls>
+
+        <div class="layout-desktop layout-desktop-home-main">
+            <div>
+                <h1 tabindex="0">Hi! My name is Kibreab!</h1>
+                <audio controls tabindex="0">
                     <source src="Audio/welcome.mp3" type="audio/mp3">
                 </audio>
-                <article id="basic-intro">
-                    <h3> Hi! my name is Kibreab</h3>
-                    <p>Welcome to my portfolio! An enthusiast for all things software, technology, programming, data
-                        science, with experience in building
-                        scalable web applications, cloud infrastructure, real-time monitoring tools. With a knack for
-                        problem-solving and a commitment to learning, I aim to contribute to innovative projects that
-                        make a difference.</p>
+                <article>
+                    <h2 tabindex="0">Welcome to my Portfolio</h2>
+                    <p>An enthusiast for all things software, technology, programming, data science, with experience in
+                        building scalable web applications, cloud infrastructure, real-time monitoring tools. With a
+                        knack for problem-solving and a commitment to learning, I aim to contribute to innovative
+                        projects that make a difference. </p>
+                    <ul>
+                        <li tabindex="0">Crafting elegant code: Writing clean, efficient, and beautiful code.
+                        </li>
+                        <li tabindex="0">Mastering arcane technologies: Learning complex frameworks and languages.
+                        </li>
+                        <li tabindex="0">Building a digital empire: Creating software that changes the world.
+                        </li>
+                        <li tabindex="0">Hacking the matrix: Breaking into systems for fun and profit (legally, of
+                            course).
+                        </li>
+                        <li tabindex="0">Conquering infinite possibilities: Solving problems with code.
+                        </li>
+                        <li tabindex="0">Siphoning endless caffeine: Fueling late-night coding sessions.
+                        </li>
+                        <li tabindex="0">Dominating the command line: Becoming a terminal wizard.
+                        </li>
+                        <li tabindex="0">Joining the cult of open source: Contributing to the global software community.
+                        </li>
+                        <li tabindex="0">
+                            Unleashing the power of algorithms: Optimizing code to the extreme.
+                        </li>
+
+
+                    </ul>
                 </article>
-                <aside>
-                    <img src="Images/profile1.png" alt="Profile Image">
-                    <button>Download CV</button>
+            </div>
+            <div>
+                <aside class="desktop-aside">
+                    <img src="Images/profile1.png"
+                        alt="A man with his laptop and an african setting with the window shoing the sun" tabindex="0"
+                        width="512" style="opacity: 0.75;">
+                    <button tabindex="0">Download CV</button>
                 </aside>
-            </section>
+            </div>
         </div>
 
-        <div id="tablet-main">
-            <section>
-                <h1>Hello!</h1>
+        <div class="layout-tablet" id="layout-tablet-home-main">
+
+            <div class="landscape">
+                <div class="nav inblock-nav-container">
+                    <nav class="navigation">
+                        <h2 style="color: var(--background-color);">Contents of the Page</h2>
+                        <ul>
+                            <li class="current"><a href="#" tabindex="0">Home</a></li>
+                            <li><a href="./about.html" tabindex="0">About</a></li>
+                            <li><a href="./skills.html" tabindex="0">Skills</a></li>
+                            <li><a href="./blogs.html" tabindex="0">Blogs</a></li>
+                            <li><a href="./contact.html" tabindex="0">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div>
+                    <video class="rightVid" loop autoplay muted width="65%">
+                        <source src="Videos/PortfolioAboutPage.mp4" type="video/mp4">
+                        <div class="video-transcript">
+
+                        </div>
+                        Your browser does not support the video tag.
+                    </video>
+                    <blockquote style="width: 50%; margin-left: auto;"> "The best way to
+                        predict the future is to create it."– Peter
+                        Drucker,
+                        Managing for
+                        Results</blockquote>
+
+                </div>
+            </div>
+            <div class="tablet-port port">
+                <h1> Hello! </h1>
+                <img class="center-image" src="./Images/PMD_8118.JPG" alt="a human face" width="252">
+                <p>An enthusiast for all things software, technology, programming, data science, with experience in
+                    building scalable web applications, cloud infrastructure, real-time monitoring tools. With a knack
+                    for problem-solving and a commitment to learning, I aim to contribute to innovative projects that
+                    make a difference.</p>
+
+                <ul>
+                    <li tabindex="0">Crafting elegant code: Writing clean, efficient, and beautiful code.
+                    </li>
+                    <li tabindex="0">Mastering arcane technologies: Learning complex frameworks and languages.
+                    </li>
+                    <li tabindex="0">Building a digital empire: Creating software that changes the world.
+                    </li>
+                    <li tabindex="0">Hacking the matrix: Breaking into systems for fun and profit (legally, of
+                        course).
+                    </li>
+                    <li tabindex="0">Conquering infinite possibilities: Solving problems with code.
+                    </li>
+                    <li tabindex="0">Siphoning endless caffeine: Fueling late-night coding sessions.
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+
+        <div class="layout-mobile" id="layout-mobile-home-main">
+            <section id="mobile-main" class="layout-mobile">
+                <h1 tabindex="0">Hi!</h1>
                 <article>
-                    <div class="video-content tablet-land">
-                        <video loop autoplay muted width="550" height="440">
-                            <source src="Videos/WelcomePortfolio.mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div class="image-content">
-                        <img src="Images/profile2.png" alt="Profile Image">
-                    </div>
-                    <h3>My name is Lorems!</h3>
-                    <p>Welcome to my portfolio! An enthusiast for all things software, technology, programming, data
-                        science, with experience in building
-                        scalable web applications, cloud infrastructure, real-time monitoring tools. With a knack for
-                        problem-solving and a commitment to learning, I aim to contribute to innovative projects that
-                        make a difference.</p>
+                    <h2 tabindex="0">My name is Kibreab</h2>
+                    <p tabindex="0">Welcome to my portfolio! I am an enthusiast for all things software, technology,
+                        programming, data
+                        science, with experience in:</p>
+                    <ol>
+                        <li tabindex="0">Architecting cloud infrastructure</li>
+                        <li tabindex="0">Building scalable web applications
+                        </li>
+                        <li tabindex="0">
+                            Developing real-time monitoring tools
+                        </li>
+                        <li tabindex="0">Implementing machine learning algorithms</li>
+                        <li tabindex="0">
+                            Optimizing database performance
+                        </li>
+                        <li tabindex="0">
+                            Automating tasks with DevOps tools
+                        </li>
+                        <li tabindex="0">
+                            Analyzing large datasets
+                        </li>
+                        <li tabindex="0">
+                            Designing user-friendly interfaces
+                        </li>
+                        <li tabindex="0">
+                        </li>
+                    </ol>
+                    <p>If you're interested in working together or discussing exciting opportunities, feel free to reach
+                        out. Let’s create something remarkable!</p>
+                    <button tabindex="0">Get my CV</button>
                 </article>
-                <button>More</button>
             </section>
 
         </div>
-
-        <div id="mobile-main">
-            <section>
-                <h1> Hi! </h1>
-                <article>
-                    <h3>My name is Lorem!</h3>
-                    <p>Welcome to my portfolio! I am an enthusiast for all things software, technology, programming,
-                        data
-                        science, with experience in: </p>
-                    <img src="Images/profile1.png" alt="profile picture">
-                    <div id="portrait-mobile-ol">
-                        <ol>
-                            <li>
-                                building scalable web applications
-                            </li>
-                            <li>
-                                cloud infrastructure
-                            </li>
-                            <li>
-                                real-time monitoring tools
-                            </li>
-                        </ol>
-                    </div>
-                    <button>Get my CV!</button>
-                </article>
-            </section>
-        </div>
-
+        <!-- Desktop Layout -->
 
     </main>
     <footer>
-
-        <p>All rights reserved Kibreab C.</p>
+        <div>
+            <p tabindex="0">&copy; 2024 Kibreab C. All rights reserved.</p>
+        </div>
         <div class="socials">
             <ul>
-                <li>
-                    <a href="https://www.github.com">
-                        <img src="Images/icons/github.png" alt="Git-Icon">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.leetcode.com">
-                        <img src="Images/icons/leetcode.png" alt="Leetcode-Icon">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com">
-                        <img src="Images/icons/linkdin.png" alt="Linkdin-Icon">
-                    </a>
-                </li>
+                <li><a href="https://www.github.com" tabindex="0"><img src="Images/icons/github.png"
+                            alt="GitHub Icon"></a></li>
+                <li><a href="https://www.leetcode.com" tabindex="0"><img src="Images/icons/leetcode.png"
+                            alt="LeetCode Icon"></a></li>
+                <li><a href="https://www.linkedin.com" tabindex="0"><img src="./Images/icons/linkdin.png"
+                            alt="LinkedIn Icon"></a></li>
             </ul>
         </div>
     </footer>
 </body>
-
-
 
 </html>

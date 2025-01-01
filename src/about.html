@@ -3,245 +3,310 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
 </head>
 
 <body>
     <header>
-        <div class="desktop-header tablet-header mobile-header">
-            <div class="desktop-socials tablet-socials">
+        <!-- Social Links -->
+        <div class="layout-desktop">
+            <div class="links">
                 <ul>
-                    <li>
-                        <a href="https://www.github.com">
-                            <img src="Images/icons/github.png" alt="Git-Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.leetcode.com">
-                            <img src="Images/icons/leetcode.png" alt="Leetcode-Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com">
-                            <img src="Images/icons/linkdin.png" alt="Linkdin-Icon">
-                        </a>
-                    </li>
+                    <li><a href="https://www.github.com" tabindex="0"><img src="Images/icons/github.png"
+                                alt="GitHub Icon"></a></li>
+                    <li><a href="https://www.leetcode.com" tabindex="0"><img src="Images/icons/leetcode.png"
+                                alt="LeetCode Icon"></a></li>
+                    <li><a href="https://www.linkedin.com" tabindex="0"><img src="Images/icons/linkdin.png"
+                                alt="LinkedIn Icon"></a></li>
                 </ul>
             </div>
+            <div class="nav">
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="./home.html" tabindex="0">Home</a></li>
+                        <li class="active"><a href="#" tabindex="0">About</a></li>
+                        <li><a href="./skills.html" tabindex="0">Skills</a></li>
+                        <li><a href="./blogs.html" tabindex="0">Blogs</a></li>
+                        <li><a href="./contact.html" tabindex="0">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
 
-            <input type="checkbox" id="menu-toggle" class="menu-toggle mobile-header">
-            <label for="menu-toggle" class="hamburger mobile-header">☰ Home</label>
-            <nav>
+        <div class="layout-tablet">
+            <div class="nav">
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="./home.html" tabindex="0">Home</a></li>
+                        <li class="active"><a href="./about.html" tabindex="0">About</a></li>
+                        <li><a href="./skills.html" tabindex="0">Skills</a></li>
+                        <li><a href="./blogs.html" tabindex="0">Blogs</a></li>
+                        <li><a href="./contact.html" tabindex="0">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="links">
                 <ul>
-                    <li><a href="./home.html">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="./skills.html">Skills</a></li>
-                    <li><a href="./blogs.html">Blogs</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="https://www.github.com" tabindex="0"><img src="Images/icons/github.png"
+                                alt="GitHub Icon"></a></li>
+                    <li><a href="https://www.leetcode.com" tabindex="0"><img src="Images/icons/leetcode.png"
+                                alt="LeetCode Icon"></a></li>
+                    <li><a href="https://www.linkedin.com" tabindex="0"><img src="Images/icons/linkdin.png"
+                                alt="LinkedIn Icon"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="layout-mobile">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" tabindex="0">
+            <label for="menu-toggle" class="hamburger" tabindex="0">☰ About</label>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="./home.html" tabindex="0">Home</a></li>
+                    <li class="current"><a href="about.html" tabindex="0">About</a></li>
+                    <li><a href="./skills.html" tabindex="0">Skills</a></li>
+                    <li><a href="./blogs.html" tabindex="0">Blogs</a></li>
+                    <li><a href="./contact.html" tabindex="0">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-
-        <div id="desktop-main">
-            <video width="550" loop autoplay>
-                <source src="Videos/WelcomePortfolio.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <p>Currenlty, I'm pursuing my BS in Software Engineering at Addis Ababa University. My education is playing
-                a pivotal role in shaping my skills and interests. Through coursework and hands-on projects, I am
-                exploring web development and computer architecture, laying the groundwork for my future pursuits. One
-                of the most rewarding experiences has been winning the XYZ hackathon. <br>
-                Outside of academics, I am passionate about understanding how technology improves lives, solving
-                puzzles,
-                or experimenting with side projects. I also enjoy reading and playing games which helps me recharge and
-                stay curious as I continue to grow personally and professionally.</p>
-            <div>
-                <article>
-                    <h2>Education</h2>
-                    <ol>
-                        <li>
-                            XYZ Highschool
-                        </li>
-                        <li>
-                            Addis Ababa University
-                        </li>
-                        <li>
-                            Kuraz bootcamp
-                        </li>
-                    </ol>
-                </article>
-
-                <article>
-                    <h2>Interests</h2>
-                    <ul>
-                        <li>
-                            Bug Bounty
-                        </li>
-                        <li>
-                            Competitive programming
-                        </li>
-                        <li>
-                            Story telling game development
-                        </li>
-                    </ul>
-                </article>
-            </div>
-
-        </div>
-
-        <div id="tablet-main">
-
-            <section id="tablet-port">
-                <h1>
-                    About Me
-                </h1>
-                <article>
-                    <h3>What am I like?</h3>
-                    <audio controls>
-                        <source src="Audio/welcome.mp3" type="audio/mp3">
-                    </audio>
-                    <blockquote>Talk is cheap, show me code. <br>-Linus Torvlads.</blockquote>
-                    <p>Currenlty, I'm pursuing my BS in Software Engineering at Addis Ababa University. My education is
-                        playing
-                        a pivotal role in shaping my skills and interests. Through coursework and hands-on projects, I
-                        am
-                        exploring web development and computer architecture, laying the groundwork for my future
-                        pursuits. One
-                        of the most rewarding experiences has been winning the XYZ hackathon.
-
-                    </p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Education</th>
-                                <th>Interest</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td> Highscool</td>
-                                <td>Bug Bounties</td>
-                            </tr>
-                            <tr>
-                                <td> Addis Ababa University</td>
-                                <td> Competitve Programing</td>
-                            </tr>
-                            <tr>
-                                <td> Kuraz Bootcamp</td>
-                                <td> Hackathons</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </article>
-            </section>
-
-            <section class="mobile-land tablet-land">
-
-                <h1>About</h1>
-                <article>
-                    <h2>Education</h2>
-                    <p>Currenlty, I'm pursuing my BS in Software Engineering at Addis Ababa University. My education is
+        <div class="layout-desktop">
+            <div class="layout-desktop-about-main">
+                <div class="top">
+                    <video class="center-vid" loop autoplay muted width="65%" tabindex="0">
+                        <source src="Videos/PortfolioAboutPage.mp4" type="video/mp4">
+                        <div class="video-transcript" tabindex="0">
+                            Your browser does not support the video tag.
+                        </div>
+                    </video>
+                    <p tabindex="0">Currenlty, I'm pursuing my BS in Software Engineering at Addis Ababa University. My
+                        education is
                         playing a pivotal role in shaping my skills and interests. Through coursework and hands-on
-                        projects, I am exploring web development and computer architecture, laying the groundwork for my
-                        future pursuits.
-                    </p>
-                </article>
-                <article>
-                    <h2>
-                        Interests
-                    </h2>
-                    <p>Outside of academics, I am passionate about understanding how technology improves lives, solving
+                        projects, I
+                        am exploring web development and computer architecture, laying the groundwork for my future
+                        pursuits.
+                        One of the most rewarding experiences has been winning the XYZ hackathon. <br> <br>
+                        Outside of academics, I am passionate about understanding how technology improves lives, solving
                         puzzles, or experimenting with side projects. I also enjoy reading and playing games which helps
-                        me recharge and stay curious as I continue to grow personally and professionally.</p>
-                </article>
-            </section>
+                        me
+                        recharge and stay curious as I continue to grow personally and professionally.</p>
+                </div>
+
+                <div class="lower">
+                    <article class="container" tabindex="0">
+                        <h2>Education</h2>
+                        <ol>
+                            <li tabindex="0">Andinet Highscool</li>
+                            <li tabindex="0">Addis Ababa University</li>
+                            <li tabindex="0">Kuraz bootcamp</li>
+                            <li tabindex="0">Gothe Art Institute</li>
+                        </ol>
+                    </article>
+
+                    <article class="container" tabindex="0">
+                        <h2>Interests</h2>
+                        <ul>
+                            <li tabindex="0">Software Engineering</li>
+                            <li tabindex="0">Cloud Computing</li>
+                            <li tabindex="0">Data Science</li>
+                            <li tabindex="0">Real-Time Systems</li>
+                            <li tabindex="0">Web Development</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
         </div>
 
-        <div id="mobile-main">
-            <section id="mobile-port">
-                <h2> About me! </h2>
-                <img src="Images/PMD_8118.JPG" alt="profile picture" width="440">
-                <article>
-                    <h3>Lorem Ipsum</h3>
-                    <blockquote>A ship in port is safe, but that is not what ships are built for. <br>-Grace Hopper
-                    </blockquote>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>
-                                    Education
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>XYZ Highschool</td>
-                            </tr>
-                            <tr>
-                                <td> Addis Ababa University</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Kuraz Bootcamp
-                                </td>
-                            </tr>
+        <div class="layout-tablet">
+            <div class="layout-tablet-about-main">
+                <div class="landscape">
+                    <article class="container" tabindex="0">
+                        <h2>1. Education</h2>
+                        <p tabindex="0">My educational journey has been a blend of foundational learning and
+                            transformative
+                            experiences. At Andinet High School, I developed a solid academic base, where I first
+                            discovered my passion for technology and problem-solving. This passion led me to Addis Ababa
+                            University, where I delved deeper into the technical world, exploring algorithms, data
+                            structures, and the art of building scalable systems. The rigorous environment there
+                            challenged me to think critically and sparked my drive to create innovative solutions. <br>
+                            <br>
+                            Seeking hands-on, practical skills, I joined Kuraz Bootcamp, a game-changing experience that
+                            immersed me in modern software engineering practices. From building full-stack applications
+                            to collaborating on real-world projects, I honed my ability to translate ideas into working
+                            solutions. Additionally, my time at the Goethe Institute offered a unique opportunity to
+                            expand my perspective through cultural exploration, sharpening my communication skills and
+                            fostering creativity—qualities that now enrich my technical work.
+                        </p>
+                    </article>
 
-                        </tbody>
-                    </table>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>
-                                    Interests
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td> Web programming</td>
-                            </tr>
-                            <tr>
-                                <td> Competitive programming</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Game development
-                                </td>
-                            </tr>
+                    <article class="container" tabindex="0">
+                        <h2>2. Interests</h2>
+                        <p tabindex="0">
+                            I have a deep-seated passion for all things technology, and my interests span a broad
+                            spectrum. As a software engineer, I’m captivated by designing elegant systems that solve
+                            real-world problems. Whether it’s crafting intuitive web applications, building scalable
+                            back-end architectures, or architecting robust cloud computing environments, I love creating
+                            solutions that are as efficient as they are innovative. Real-time systems, in particular,
+                            excite me because they demand precision, speed, and adaptability—qualities that I constantly
+                            strive to embody in my work.<br> <br>
+                            Beyond software, I’m fascinated by data science and its ability to turn raw numbers into
+                            actionable insights. From developing machine learning models to visualizing trends, I enjoy
+                            the process of uncovering stories hidden within data. What ties all my interests together is
+                            a love for problem-solving and the thrill of learning something new every day. Technology is
+                            ever-evolving, and I’m excited to keep evolving with it, one line of code at a time.
+                        </p>
+                    </article>
+                </div>
+                <div class="tablet-port">
+                    <section tabindex="0">
+                        <h1>About Me</h1>
+                        <audio controls class="center-vid" tabindex="0">
+                            <source
+                                src="Audio/Quote_The_best_way_to_predict_the_future_is_to_invent_it_by_Alan_Kay_[_YouConvert (mp3cut.net).mp3"
+                                type="audio/mp3">
+                        </audio>
 
-                        </tbody>
-                    </table>
+                        <article tabindex="0">
+                            <blockquote tabindex="0">The best way to predict the future is to create it.
+                                <br>– Peter Drucker, Managing for Results
+                            </blockquote>
 
-                </article>
-            </section>
+                            <div class="container" tabindex="0">
+                                <p tabindex="0">Currenlty, I'm pursuing my BS in Software Engineering at Addis Ababa
+                                    University. My
+                                    education is playing a pivotal role in shaping my skills and interests. Through
+                                    coursework and hands-on
+                                    projects, I am exploring web development and computer architecture, laying the
+                                    groundwork for my
+                                    future pursuits. One of the most rewarding experiences has been winning the XYZ
+                                    hackathon.
+                                </p>
+                            </div>
 
+                            <table tabindex="0">
+                                <thead>
+                                    <tr>
+                                        <th tabindex="0">Education</th>
+                                        <th tabindex="0">Interest</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td tabindex="0">Highscool</td>
+                                        <td tabindex="0">Bug Bounties</td>
+                                    </tr>
+                                    <tr>
+                                        <td tabindex="0">Addis Ababa University</td>
+                                        <td tabindex="0">Competitve Programing</td>
+                                    </tr>
+                                    <tr>
+                                        <td tabindex="0">Kuraz Bootcamp</td>
+                                        <td tabindex="0">Hackathons</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="layout-mobile">
+            <div class="layout-mobile-about-main">
+                <div class="portrait">
+                    <section id="mobile-port" tabindex="0">
+                        <h2>About me!</h2>
+                        <img class="center-image" src="Images/PMD_8118.JPG" alt="profile picture" width="440"
+                            tabindex="0">
+                        <div tabindex="0">
+                            <blockquote tabindex="0">A ship in port is safe, but that is not what ships are built for.
+                                <br>-Grace Hopper
+                            </blockquote>
+
+                            <table tabindex="0">
+                                <thead>
+                                    <tr>
+                                        <th tabindex="0">Education</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td tabindex="0">XYZ Highschool</td>
+                                    </tr>
+                                    <tr>
+                                        <td tabindex="0">Addis Ababa University</td>
+                                    </tr>
+                                    <tr>
+                                        <td tabindex="0">Kuraz Bootcamp</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table tabindex="0">
+                                <thead>
+                                    <tr>
+                                        <th tabindex="0">Interests</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td tabindex="0">Web programming</td>
+                                    </tr>
+                                    <tr>
+                                        <td tabindex="0">Competitive programming</td>
+                                    </tr>
+                                    <tr>
+                                        <td tabindex="0">Game development</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="landscape">
+                    <h2 tabindex="0">A little About myself</h2>
+                    <article tabindex="0">
+                        <h2>Education</h2>
+                        <p tabindex="0">Currenlty, I'm pursuing my BS in Software Engineering at Addis Ababa University.
+                            My education
+                            is playing a pivotal role in shaping my skills and interests. Through coursework and
+                            hands-on
+                            projects, I am exploring web development and computer architecture, laying the groundwork
+                            for my
+                            future pursuits.
+                        </p>
+                    </article>
+                    <article tabindex="0">
+                        <h2>Interests</h2>
+                        <p tabindex="0">Outside of academics, I am passionate about understanding how technology
+                            improves lives,
+                            solving puzzles, or experimenting with side projects. I also enjoy reading and playing games
+                            which
+                            helps me recharge and stay curious as I continue to grow personally and professionally.</p>
+                    </article>
+                </div>
+            </div>
         </div>
     </main>
 
     <footer>
-
-        <p>All rights reserved Kibreab C.</p>
+        <div>
+            <p tabindex="0">&copy; 2024 Kibreab C. All rights reserved.</p>
+        </div>
         <div class="socials">
             <ul>
-                <li>
-                    <a href="https://www.github.com">
-                        <img src="Images/icons/github.png" alt="Git-Icon">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.leetcode.com">
-                        <img src="Images/icons/leetcode.png" alt="Leetcode-Icon">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com">
-                        <img src="Images/icons/linkdin.png" alt="Linkdin-Icon">
-                    </a>
-                </li>
+                <li><a href="https://www.github.com" tabindex="0"><img src="Images/icons/github.png"
+                            alt="GitHub Icon"></a></li>
+                <li><a href="https://www.leetcode.com" tabindex="0"><img src="Images/icons/leetcode.png"
+                            alt="LeetCode Icon"></a></li>
+                <li><a href="https://www.linkedin.com" tabindex="0"><img src="./Images/icons/linkdin.png"
+                            alt="LinkedIn Icon"></a></li>
             </ul>
         </div>
     </footer>
