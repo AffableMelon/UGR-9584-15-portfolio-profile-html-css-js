@@ -280,6 +280,50 @@ footer ul {
     display: block;
   }
 
+  main div.layout-tablet-skills-main div.landscape div.top img{
+
+  min-width: 157px;
+  max-width: 272px;
+}
+
+
+/* main div.layout-tablet-skills-main div.landscape div.top section article figure  {
+  background-color: var(--brand-color);
+  border-radius: 10px;
+  padding: 10px;
+} */
+
+main div.layout-tablet-skills-main div.landscape div.top section article figure{
+  width:fit-content ;
+  background-color: var(--brand-color);
+  padding: 2% 3%;
+  border-radius: 10px;
+  color: white;
+}
+
+main div.layout-tablet-skills-main div.landscape div.top{
+  display: flex;
+  justify-content: space-between;
+}
+
+main div.layout-tablet-skills-main div.landscape div.bottom div.container{
+  padding: 2%;
+  margin-left: auto ;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.32);
+    -webkit-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.32);
+    -moz-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.32);
+}
+
+
+main div.layout-tablet-skills-main div.landscape{
+  display: flex;
+  flex-direction: column;
+}
+
+  
+
   .landscape {
     display: flex;
     flex-direction: column;
@@ -411,18 +455,32 @@ footer ul {
   max-width: 272px;
 }
 
-.layout-tablet-skills-main section.certf-hold article{
+.layout-tablet-skills-main section.certf-hold{
   display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* width: 490px; */
+  margin: 0 auto;
+
+}
+
+.layout-tablet-skills-main section.certf-hold article div ul li{
+  font-size: medium;
+
 }
     .layout-tablet-skills-main div.portrait section article.container-art{
+      display: flex;
+      align-items: center;
+      width: 100%;
       background-color: var(--background-color);
-      margin: 3% 2%;
-      padding: 0 2%;
+      margin: 3% 0;
+      /* padding: 0 2%; */
       border-radius: 10px;
       box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.32);
     -webkit-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.32);
     -moz-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.32);
     }
+  
 
   .layout-tablet-about-main .container {
     margin: 0 2%;
@@ -616,6 +674,36 @@ footer ul {
     flex-direction: column;
     gap: 70px;
   } */
+   
+main div.layout-mobile-skills-main div.top section article figure{
+  width:fit-content ;
+  background-color: var(--brand-color);
+  padding: 2% 3%;
+  margin: 3%;
+  border-radius: 8px;
+  color: white;
+}
+   .layout-mobile-skills-main section.certf-hold img{
+  min-width: 150;
+  max-width: 172px;
+}
+
+.layout-mobile-skills-main section.certf-hold{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* width: 490px; */
+  /* margin: 0 auto; */
+  justify-content: center;
+  align-items: center;
+
+}
+
+.layout-mobile-skills-main section.certf-hold article div ul li{
+  font-size: medium;
+
+}
+   
 
   .layout-mobile-about-main table {
     /* min-width: 250px; */
@@ -675,3 +763,4 @@ footer ul {
     text-align: center;
   }
 }
+

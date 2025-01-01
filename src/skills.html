@@ -3,165 +3,330 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/skills.css">
-    <title>Skills</title>
+    <title>About</title>
 </head>
 
 <body>
     <header>
-        <div class="desktop-header tablet-header mobile-header">
-            <ul>
-                <li>
-                    <a href="https://www.github.com">
-                        <img src="Images/icons/github.png" alt="Git-Icon">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.leetcode.com">
-                        <img src="Images/icons/leetcode.png" alt="Leetcode-Icon">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com">
-                        <img src="Images/icons/linkdin.png" alt="Linkdin-Icon">
-                    </a>
-                </li>
-            </ul>
+        <!-- Social Links -->
+        <div class="layout-desktop">
+            <div class="links">
+                <ul>
+                    <li><a href="https://www.github.com" tabindex="0"><img src="Images/icons/github.png"
+                                alt="GitHub Icon"></a></li>
+                    <li><a href="https://www.leetcode.com" tabindex="0"><img src="Images/icons/leetcode.png"
+                                alt="LeetCode Icon"></a></li>
+                    <li><a href="https://www.linkedin.com" tabindex="0"><img src="Images/icons/linkdin.png"
+                                alt="LinkedIn Icon"></a></li>
+                </ul>
+            </div>
+            <div class="nav">
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="./home.html" tabindex="0">Home</a></li>
+                        <li><a href="./about.html" tabindex="0">About</a></li>
+                        <li class="active"><a href="./skills.html" tabindex="0">Skills</a></li>
+                        <li><a href="./blogs.html" tabindex="0">Blogs</a></li>
+                        <li><a href="./contact.html" tabindex="0">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
 
-        <input type="checkbox" id="menu-toggle" class="menu-toggle mobile-header">
-        <label for="menu-toggle" class="hamburger mobile-header">☰ Skills</label>
-        <nav>
-            <ul>
-                <li><a href="./home.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="./blogs.html">Blogs</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="layout-tablet">
+            <div class="nav">
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="./home.html" tabindex="0">Home</a></li>
+                        <li><a href="./about.html" tabindex="0">About</a></li>
+                        <li class="active"><a href="./skills.html" tabindex="0">Skills</a></li>
+                        <li><a href="./blogs.html" tabindex="0">Blogs</a></li>
+                        <li><a href="./contact.html" tabindex="0">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="https://www.github.com" tabindex="0"><img src="Images/icons/github.png"
+                                alt="GitHub Icon"></a></li>
+                    <li><a href="https://www.leetcode.com" tabindex="0"><img src="Images/icons/leetcode.png"
+                                alt="LeetCode Icon"></a></li>
+                    <li><a href="https://www.linkedin.com" tabindex="0"><img src="Images/icons/linkdin.png"
+                                alt="LinkedIn Icon"></a></li>
+                </ul>
+            </div>
+        </div>
 
-
-
+        <!-- Mobile Menu -->
+        <div class="layout-mobile">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" tabindex="0">
+            <label for="menu-toggle" class="hamburger" tabindex="0">☰ Skills</label>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="./home.html" tabindex="0">Home</a></li>
+                    <li><a href="about.html" tabindex="0">About</a></li>
+                    <li class="current"><a href="./skills.html" tabindex="0">Skills</a></li>
+                    <li><a href="./blogs.html" tabindex="0">Blogs</a></li>
+                    <li><a href="./contact.html" tabindex="0">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="tablet-port desktop mobile-land">
-            <h2> Certificates </h2>
-            <article id="CF1">
-                <h4>Fullstack Open Completion</h4>
-                <figure>
-                    <img src="Images/certificate-fullstack.png" alt="certificate 1">
-                    <figcaption>Given on: 09/12/2024</figcaption>
-                </figure>
-                <p>Some explanation</p>
-            </article>
 
-            <article id="CF2">
-
-                <h4>Azure Fundementals</h4>
-                <figure>
-                    <img src="Images/certificate-fullstack.png" alt="certificate 2">
-                    <figcaption>Given on: 11/09/2024</figcaption>
-                </figure>
-                <p>Some explanation</p>
-            </article>
-
-            <article id="CF3">
-                <h4> Programming Certification </h4>
-                <figure>
-                    <img src="Images/certificate-fullstack.png" alt="certificate 3">
-                    <figcaption>Given on 08/23/2021</figcaption>
-                </figure>
-                <p>Some explanation</p>
-            </article>
-
-        </section>
-
-        <section class="desktop-tabel mobile-land-tabel">
-            <h2>My abilities</h2>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Programing Tools</th>
-                        <th>Proficency out of 10</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <img src="Images/icons/html-5.png" alt="HTML"> HTML
-                        </td>
-                        <td>
-                            9
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="Images/icons/css-3.png" alt="CSS"> CSS
-                        </td>
-                        <td>
-                            9
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="Images/icons/js.png" alt="JavaScript"> JavaScript
-                        </td>
-                        <td>
-                            8
-                        </td>
-
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section class="tablet-land mobile-port">
+        <div class="layout-desktop">
             <h2>Certificates</h2>
-            <figure>
-                <img src="Images/certificate-fullstack.png" alt="Fullstack Certification">
-                <figcaption>Fullstack Certification.</figcaption>
-            </figure>
-            <figure>
-                <img src="Images/certificate-fullstack.png" alt="Azure Fundementals Certification">
-                <figcaption>Azure certification.</figcaption>
-            </figure>
-            <article>
-                <h3>Description</h3>
-                <p>These certifications reflect my commitment to continuous learning and staying up-to-date with
-                    cutting-edge technologies in cloud computing and web development.
-                </p>
-            </article>
-        </section>
+            <div class="layout-desktop-skills-main container">
+                <!-- <p>hello</p> -->
+                <section class="certf-hold">
+                    <!-- <h2> Certificates </h2> -->
+                    <article id="CF1">
+                        <h3 style="font-weight: bold ;">Fullstack Development</h3>
+                        <figure>
+                            <img src="Images/certificate-fullstack.png" alt="certificate 1">
+                            <figcaption>Given on: 09/12/2024</figcaption>
+                        </figure>
+
+                    </article>
+
+                    <article id="CF2">
+
+                        <h4>Azure Fundementals</h4>
+                        <figure>
+                            <img src="Images/azure.png" alt="certificate 2">
+                            <figcaption>Given on: 11/09/2024</figcaption>
+                        </figure>
+
+                    </article>
+
+                    <article id="CF3">
+                        <h4> Programming Certification </h4>
+                        <figure>
+                            <img src="Images/basics.png" alt="certificate 3">
+                            <figcaption>Given on 08/23/2021</figcaption>
+                        </figure>
+
+                    </article>
+
+                </section>
+            </div>
+            <div class="table-holder-skils">
+
+                <section>
+                    <h2>My abilities</h2>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Programing Tools</th>
+                                <th>Proficency out of 10</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="Images/icons/html-5.png" alt="html figure"> HTML
+                                </td>
+                                <td>
+                                    9
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="Images/icons/css-3.png" alt="css figure"> CSS
+                                </td>
+                                <td>
+                                    9
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="Images/icons/js.png" alt="javascript figure"> JavaScript
+                                </td>
+                                <td>
+                                    8
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+
+        </div>
+
+        <div class="layout-tablet">
+            <div class="layout-tablet-skills-main">
+                <div class="landscape">
+                    <div class="top">
+                        <section class="certf-hold">
+                            <h2 style="display: none;"> Certificates </h2>
+                            <article class="container-art">
+                                <figure>
+                                    <img src="Images/certificate-fullstack.png" alt="certificate 1">
+                                    <figcaption>Given on: 09/12/2024</figcaption>
+                                </figure>
+
+                            </article>
+                        </section>
+
+                        <section class="certf-hold">
+                            <h2 style="display: none;"> Certificates </h2>
+                            <article class="container-art">
+                                <figure style="width: fit-content;">
+                                    <img src="Images/certificate-fullstack.png" alt="certificate 1">
+                                    <figcaption>Given on: 09/12/2024</figcaption>
+                                </figure>
+
+                            </article>
+                        </section>
+                    </div>
 
 
 
+                    <div class="bottom">
+                        <hr style="border: 1px solid;">
+                        <div class="container">
+                            <p>I am passionate about leveraging technology to solve real-world problems and make a
+                                lasting impact. My skillset spans a wide range of technical areas, including cloud
+                                computing, software engineering, and data analytics. <br> <br> I thrive in designing
+                                scalable
+                                solutions that enhance efficiency and user experience. Through certifications like the
+                                ones displayed above, I’ve strengthened my expertise in cloud platforms such as
+                                Microsoft Azure, ensuring that I am equipped to build secure and reliable
+                                infrastructures.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="portrait">
+                    <hr style="border: 1px solid;">
+                    <section class="certf-hold">
+                        <h2 style="display: none;"> Certificates </h2>
+                        <article class="container-art">
+                            <figure style="margin: 4% 5% 0 0;">
+                                <img src="Images/certificate-fullstack.png" alt="certificate 1">
+                                <figcaption style="text-align: center;;">Given on: 09/12/2024</figcaption>
+                            </figure>
+                            <div class="description">
+                                <h3>Fullstack Development</h3>
+                                <ul>
+                                    <li>
+                                        Proficient in both front-end and back-end web development technologies.
+
+                                    </li>
+                                    <li>Understands web security best practices to protect applications from
+                                        vulnerabilities
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="container-art">
+                            <figure style="margin: 4% 5% 0 0;">
+                                <img src="Images/azure.png" alt="certificate 2">
+                                <figcaption style="text-align: center;;">Given on: 11/09/2024</figcaption>
+                            </figure>
+                            <div class="description">
+                                <h3> Fullstack Development</h3>
+
+                                <ul>
+                                    <li>Demonstrates foundational knowledge in Azure cloud services.
+                                    </li>
+                                    <li>Successfully prepared for and passed the Microsoft Azure Fundamentals
+                                        certification
+                                        exam.</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="container-art">
+                            <figure style="margin: 4% 5% 0 0;">
+                                <img src="Images/basics.png" alt="certificate 3">
+                                <figcaption style="text-align: center;;">Given on: 08/23/2021</figcaption>
+                            </figure>
+                            <div class="description">
+                                <h3>Programming Basics</h3>
+
+                                <ul style="display: flex; flex-wrap: wrap; flex-direction: column;">
+                                    <li>Demonstrates foundational knowledge in Azure cloud services.
+                                    </li>
+                                    <li>Successfully prepared for and passed the Microsoft Azure Fundamentals
+                                        certification
+                                        exam.</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                    </section>
+                    <hr style="border: 1px solid;">
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="layout-mobile">
+            <div class="layout-mobile-skills-main">
+                <div class="portrait">
+                    <div class="top">
+                        <section class="certf-hold">
+                            <h2 style="display: none;"> Certificates </h2>
+                            <article class="container-art">
+                                <figure>
+                                    <img src="Images/certificate-fullstack.png" alt="certificate 1">
+                                    <figcaption>Given on: 09/12/2024</figcaption>
+                                </figure>
+
+                            </article>
+                        </section>
+
+                        <section class="certf-hold">
+                            <h2 style="display: none;"> Certificates </h2>
+                            <article class="container-art">
+                                <figure style="width: fit-content;">
+                                    <img src="Images/certificate-fullstack.png" alt="certificate 1">
+                                    <figcaption>Given on: 09/12/2024</figcaption>
+                                </figure>
+
+                            </article>
+                        </section>
+                        <hr style="border: 1px solid;">
+                        <div class="container">
+                            <h3>My Asipration!</h3>
+                            <p>I am passionate about leveraging technology to solve real-world problems and make a
+                                lasting impact. My skillset spans a wide range of technical areas, including cloud
+                                computing, software engineering, and data analytics. <br> <br> I thrive in designing
+                                scalable
+                                solutions that enhance efficiency and user experience. Through certifications like the
+                                ones displayed above, I’ve strengthened my expertise in cloud platforms such as
+                                Microsoft Azure, ensuring that I am equipped to build secure and reliable
+                                infrastructures.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </main>
 
     <footer>
-
-        <p>All rights reserved Kibreab C.</p>
+        <div>
+            <p tabindex="0">&copy; 2024 Kibreab C. All rights reserved.</p>
+        </div>
         <div class="socials">
             <ul>
-                <li>
-                    <a href="https://www.github.com">
-                        <img src="Images/icons/github.png" alt="Git-Icon">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.leetcode.com">
-                        <img src="Images/icons/leetcode.png" alt="Leetcode-Icon">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com">
-                        <img src="Images/icons/linkdin.png" alt="Linkdin-Icon">
-                    </a>
-                </li>
+                <li><a href="https://www.github.com" tabindex="0"><img src="Images/icons/github.png"
+                            alt="GitHub Icon"></a></li>
+                <li><a href="https://www.leetcode.com" tabindex="0"><img src="Images/icons/leetcode.png"
+                            alt="LeetCode Icon"></a></li>
+                <li><a href="https://www.linkedin.com" tabindex="0"><img src="./Images/icons/linkdin.png"
+                            alt="LinkedIn Icon"></a></li>
             </ul>
         </div>
     </footer>
