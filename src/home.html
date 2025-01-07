@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/test2.css" rel="stylesheet">
     <title>Portfolio - Kibreab</title>
 </head>
 
@@ -14,11 +14,11 @@
         <div class="layout-desktop">
             <div class="links">
                 <ul>
-                    <li><a href="https://www.github.com" tabindex="0"><img src="Images/icons/github.png"
+                    <li><a href="https://www.github.com" tabindex="0"><img src="Images/icons/github.webp"
                                 alt="GitHub Icon"></a></li>
-                    <li><a href="https://www.leetcode.com" tabindex="0"><img src="Images/icons/leetcode.png"
+                    <li><a href="https://www.leetcode.com" tabindex="0"><img src="Images/icons/leetcode.webp"
                                 alt="LeetCode Icon"></a></li>
-                    <li><a href="https://www.linkedin.com" tabindex="0"><img src="Images/icons/linkdin.png"
+                    <li><a href="https://www.linkedin.com" tabindex="0"><img src="Images/icons/linkdin.webp"
                                 alt="LinkedIn Icon"></a></li>
                 </ul>
             </div>
@@ -49,11 +49,12 @@
             </div>
             <div class="links">
                 <ul>
-                    <li><a href="https://www.github.com" tabindex="0"><img src="Images/icons/github.png"
-                                alt="GitHub Icon"></a></li>
-                    <li><a href="https://www.leetcode.com" tabindex="0"><img src="Images/icons/leetcode.png"
+                    <li><a href="https://www.github.com" tabindex="0"><img src="Images/icons/github.webp"
+                                alt="GitHub Icon"></a>
+                    </li>
+                    <li><a href="https://www.leetcode.com" tabindex="0"><img src="Images/icons/leetcode.webp"
                                 alt="LeetCode Icon"></a></li>
-                    <li><a href="https://www.linkedin.com" tabindex="0"><img src="Images/icons/linkdin.png"
+                    <li><a href="https://www.linkedin.com" tabindex="0"><img src="Images/icons/linkdin.webp"
                                 alt="LinkedIn Icon"></a></li>
                 </ul>
             </div>
@@ -66,17 +67,31 @@
 
         <!-- Mobile Menu -->
         <div class="layout-mobile">
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="hamburger" tabindex="0">☰ Home</label>
-            <nav class="navigation">
+            <div>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger" tabindex="0">☰ Home</label>
+                <nav class="navigation">
+                    <ul>
+                        <li class="current"><a href="#" tabindex="0">Home</a></li>
+                        <li><a href="./about.html" tabindex="0">About</a></li>
+                        <li><a href="./skills.html" tabindex="0">Skills</a></li>
+                        <li><a href="./blogs.html" tabindex="0">Blogs</a></li>
+                        <li><a href="./contact.html" tabindex="0">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="links">
                 <ul>
-                    <li class="current"><a href="#" tabindex="0">Home</a></li>
-                    <li><a href="./about.html" tabindex="0">About</a></li>
-                    <li><a href="./skills.html" tabindex="0">Skills</a></li>
-                    <li><a href="./blogs.html" tabindex="0">Blogs</a></li>
-                    <li><a href="./contact.html" tabindex="0">Contact</a></li>
+                    <li><a href="https://www.github.com" tabindex="0"><img src="Images/icons/github.webp"
+                                alt="GitHub Icon"></a>
+                    </li>
+                    <li><a href="https://www.leetcode.com" tabindex="0"><img src="Images/icons/leetcode.webp"
+                                alt="LeetCode Icon"></a></li>
+                    <li><a href="https://www.linkedin.com" tabindex="0"><img src="Images/icons/linkdin.webp"
+                                alt="LinkedIn Icon"></a></li>
                 </ul>
-            </nav>
+            </div>
+
         </div>
 
 
@@ -126,9 +141,9 @@
             </div>
             <div>
                 <aside class="desktop-aside">
-                    <img src="Images/profile1.png"
+                    <img src="Images/profile1.webp"
                         alt="A man with his laptop and an african setting with the window shoing the sun" tabindex="0"
-                        width="512" style="opacity: 0.75;">
+                        width="512" style="max-width:100%; opacity: 0.75;">
                     <button tabindex="0">Download CV</button>
                 </aside>
             </div>
@@ -168,7 +183,7 @@
             </div>
             <div class="tablet-port port">
                 <h1> Hello! </h1>
-                <img class="center-image" src="./Images/PMD_8118.JPG" alt="a human face" width="252">
+                <img class="center-image" src="./Images/PMD.webp" alt="a human face" width="252">
                 <p>An enthusiast for all things software, technology, programming, data science, with experience in
                     building scalable web applications, cloud infrastructure, real-time monitoring tools. With a knack
                     for problem-solving and a commitment to learning, I aim to contribute to innovative projects that
@@ -194,42 +209,50 @@
         </div>
 
 
-        <div class="layout-mobile" id="layout-mobile-home-main">
-            <section id="mobile-main" class="layout-mobile">
-                <h1 tabindex="0">Hi!</h1>
-                <article>
-                    <h2 tabindex="0">My name is Kibreab</h2>
-                    <p tabindex="0">Welcome to my portfolio! I am an enthusiast for all things software, technology,
-                        programming, data
-                        science, with experience in:</p>
-                    <ol>
-                        <li tabindex="0">Architecting cloud infrastructure</li>
-                        <li tabindex="0">Building scalable web applications
-                        </li>
-                        <li tabindex="0">
-                            Developing real-time monitoring tools
-                        </li>
-                        <li tabindex="0">Implementing machine learning algorithms</li>
-                        <li tabindex="0">
-                            Optimizing database performance
-                        </li>
-                        <li tabindex="0">
-                            Automating tasks with DevOps tools
-                        </li>
-                        <li tabindex="0">
-                            Analyzing large datasets
-                        </li>
-                        <li tabindex="0">
-                            Designing user-friendly interfaces
-                        </li>
-                        <li tabindex="0">
-                        </li>
-                    </ol>
-                    <p>If you're interested in working together or discussing exciting opportunities, feel free to reach
-                        out. Let’s create something remarkable!</p>
-                    <button tabindex="0">Get my CV</button>
-                </article>
-            </section>
+        <div class="layout-mobile layout-mobile-home-main">
+            <div class="portrait">
+                <section class="layout-mobile">
+                    <h1 tabindex="0">Hi!</h1>
+                    <article>
+                        <h2 tabindex="0">My name is Kibreab</h2>
+                        <p tabindex="0">Welcome to my portfolio! I am an enthusiast for all things software, technology,
+                            programming, data
+                            science, with experience in:</p>
+                        <ol>
+                            <li tabindex="0">Architecting cloud infrastructure</li>
+                            <li tabindex="0">Building scalable web applications
+                            </li>
+                            <li tabindex="0">
+                                Developing real-time monitoring tools
+                            </li>
+                            <li tabindex="0">Implementing machine learning algorithms</li>
+                            <li tabindex="0">
+                                Optimizing database performance
+                            </li>
+                            <li tabindex="0">
+                                Automating tasks with DevOps tools
+                            </li>
+                            <li tabindex="0">
+                                Analyzing large datasets
+                            </li>
+                            <li tabindex="0">
+                                Designing user-friendly interfaces
+                            </li>
+                            <li tabindex="0">
+                            </li>
+                        </ol>
+                        <p>If you're interested in working together or discussing exciting opportunities, feel free to
+                            reach
+                            out. Let’s create something remarkable!</p>
+                        <button tabindex="0">Get my CV</button>
+                    </article>
+                </section>
+            </div>
+
+            <div class="landscape">
+                <p>Land</p>
+            </div>
+
 
         </div>
         <!-- Desktop Layout -->
@@ -241,11 +264,11 @@
         </div>
         <div class="socials">
             <ul>
-                <li><a href="https://www.github.com" tabindex="0"><img src="Images/icons/github.png"
+                <li><a href="https://www.github.com" tabindex="0"><img src="Images/icons/github.webp"
                             alt="GitHub Icon"></a></li>
-                <li><a href="https://www.leetcode.com" tabindex="0"><img src="Images/icons/leetcode.png"
+                <li><a href="https://www.leetcode.com" tabindex="0"><img src="Images/icons/leetcode.webp"
                             alt="LeetCode Icon"></a></li>
-                <li><a href="https://www.linkedin.com" tabindex="0"><img src="./Images/icons/linkdin.png"
+                <li><a href="https://www.linkedin.com" tabindex="0"><img src="./Images/icons/linkdin.webp"
                             alt="LinkedIn Icon"></a></li>
             </ul>
         </div>

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/test2.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
 </head>
@@ -14,11 +14,11 @@
         <div class="layout-desktop">
             <div class="links">
                 <ul>
-                    <li><a href="https://www.github.com" tabindex="0"><img src="Images/icons/github.png"
+                    <li><a href="https://www.github.com" tabindex="0"><img src="Images/icons/github.webp"
                                 alt="GitHub Icon"></a></li>
-                    <li><a href="https://www.leetcode.com" tabindex="0"><img src="Images/icons/leetcode.png"
+                    <li><a href="https://www.leetcode.com" tabindex="0"><img src="Images/icons/leetcode.webp"
                                 alt="LeetCode Icon"></a></li>
-                    <li><a href="https://www.linkedin.com" tabindex="0"><img src="Images/icons/linkdin.png"
+                    <li><a href="https://www.linkedin.com" tabindex="0"><img src="Images/icons/linkdin.webp"
                                 alt="LinkedIn Icon"></a></li>
                 </ul>
             </div>
@@ -49,11 +49,11 @@
             </div>
             <div class="links">
                 <ul>
-                    <li><a href="https://www.github.com" tabindex="0"><img src="Images/icons/github.png"
+                    <li><a href="https://www.github.com" tabindex="0"><img src="Images/icons/github.webp"
                                 alt="GitHub Icon"></a></li>
-                    <li><a href="https://www.leetcode.com" tabindex="0"><img src="Images/icons/leetcode.png"
+                    <li><a href="https://www.leetcode.com" tabindex="0"><img src="Images/icons/leetcode.webp"
                                 alt="LeetCode Icon"></a></li>
-                    <li><a href="https://www.linkedin.com" tabindex="0"><img src="Images/icons/linkdin.png"
+                    <li><a href="https://www.linkedin.com" tabindex="0"><img src="Images/icons/linkdin.webp"
                                 alt="LinkedIn Icon"></a></li>
                 </ul>
             </div>
@@ -61,17 +61,30 @@
 
         <!-- Mobile Menu -->
         <div class="layout-mobile">
-            <input type="checkbox" id="menu-toggle" class="menu-toggle" tabindex="0">
-            <label for="menu-toggle" class="hamburger" tabindex="0">☰ About</label>
-            <nav class="navigation">
+            <div>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle" tabindex="0">
+                <label for="menu-toggle" class="hamburger" tabindex="0">☰ About</label>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="./home.html" tabindex="0">Home</a></li>
+                        <li class="current"><a href="about.html" tabindex="0">About</a></li>
+                        <li><a href="./skills.html" tabindex="0">Skills</a></li>
+                        <li><a href="./blogs.html" tabindex="0">Blogs</a></li>
+                        <li><a href="./contact.html" tabindex="0">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="links">
                 <ul>
-                    <li><a href="./home.html" tabindex="0">Home</a></li>
-                    <li class="current"><a href="about.html" tabindex="0">About</a></li>
-                    <li><a href="./skills.html" tabindex="0">Skills</a></li>
-                    <li><a href="./blogs.html" tabindex="0">Blogs</a></li>
-                    <li><a href="./contact.html" tabindex="0">Contact</a></li>
+                    <li><a href="https://www.github.com" tabindex="0"><img src="Images/icons/github.webp"
+                                alt="GitHub Icon"></a></li>
+                    <li><a href="https://www.leetcode.com" tabindex="0"><img src="Images/icons/leetcode.webp"
+                                alt="LeetCode Icon"></a></li>
+                    <li><a href="https://www.linkedin.com" tabindex="0"><img src="Images/icons/linkdin.webp"
+                                alt="LinkedIn Icon"></a></li>
                 </ul>
-            </nav>
+            </div>
+
         </div>
     </header>
 
@@ -222,8 +235,7 @@
                 <div class="portrait">
                     <section id="mobile-port" tabindex="0">
                         <h2>About me!</h2>
-                        <img class="center-image" src="Images/PMD_8118.JPG" alt="profile picture" width="440"
-                            tabindex="0">
+                        <img class="center-image" src="Images/PMD.webp" alt="profile picture" width="440" tabindex="0">
                         <div tabindex="0">
                             <blockquote tabindex="0">A ship in port is safe, but that is not what ships are built for.
                                 <br>-Grace Hopper
@@ -270,26 +282,43 @@
                 </div>
 
                 <div class="landscape">
-                    <h2 tabindex="0">A little About myself</h2>
-                    <article tabindex="0">
-                        <h2>Education</h2>
-                        <p tabindex="0">Currenlty, I'm pursuing my BS in Software Engineering at Addis Ababa University.
-                            My education
-                            is playing a pivotal role in shaping my skills and interests. Through coursework and
-                            hands-on
-                            projects, I am exploring web development and computer architecture, laying the groundwork
-                            for my
-                            future pursuits.
-                        </p>
-                    </article>
-                    <article tabindex="0">
-                        <h2>Interests</h2>
-                        <p tabindex="0">Outside of academics, I am passionate about understanding how technology
-                            improves lives,
-                            solving puzzles, or experimenting with side projects. I also enjoy reading and playing games
-                            which
-                            helps me recharge and stay curious as I continue to grow personally and professionally.</p>
-                    </article>
+                    <div class="landscape">
+                        <article class="about-me">
+                            <h2 tabindex="0">A little About Myself</h2>
+                            <p>
+                                I have a natural curiosity for understanding how things work and a knack for
+                                problem-solving
+                                that drives my work.
+                                Whether it’s debugging elusive issues or optimizing performance, I approach every
+                                challenge
+                                with a methodical
+                                mindset and a focus on delivering efficient and reliable results.
+                            </p>
+                        </article>
+
+                        <div class="details-grid">
+                            <article class="education">
+                                <h2>Education</h2>
+                                <ul>
+                                    <li>Andinet Highschool</li>
+                                    <li>Addis Ababa University</li>
+                                    <li>Kuraz Bootcamp</li>
+                                    <li>Goethe Art Institute</li>
+                                </ul>
+                            </article>
+
+                            <article class="interests">
+                                <h2>Interests</h2>
+                                <ul>
+                                    <li>Software Engineering</li>
+                                    <li>Cloud Computing</li>
+                                    <li>Data Science</li>
+                                    <li>Real-Time Systems</li>
+                                    <li>Web Development</li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -301,11 +330,11 @@
         </div>
         <div class="socials">
             <ul>
-                <li><a href="https://www.github.com" tabindex="0"><img src="Images/icons/github.png"
+                <li><a href="https://www.github.com" tabindex="0"><img src="Images/icons/github.webp"
                             alt="GitHub Icon"></a></li>
-                <li><a href="https://www.leetcode.com" tabindex="0"><img src="Images/icons/leetcode.png"
+                <li><a href="https://www.leetcode.com" tabindex="0"><img src="Images/icons/leetcode.webp"
                             alt="LeetCode Icon"></a></li>
-                <li><a href="https://www.linkedin.com" tabindex="0"><img src="./Images/icons/linkdin.png"
+                <li><a href="https://www.linkedin.com" tabindex="0"><img src="./Images/icons/linkdin.webp"
                             alt="LinkedIn Icon"></a></li>
             </ul>
         </div>

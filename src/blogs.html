@@ -2,135 +2,380 @@
 <html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width initial-scale=1.0">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/test2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogs</title>
 </head>
 
 <body>
     <header>
-        <div class="desktop-header tablet-header mobile-header">
-            <div class="desktop-socials tablet-socials">
+        <!-- Social Links -->
+        <div class="layout-desktop">
+            <div class="links">
                 <ul>
-                    <li>
-                        <a href="https://www.github.com">
-                            <img src="Images/icons/github.png" alt="Git-Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.leetcode.com">
-                            <img src="Images/icons/leetcode.png" alt="Leetcode-Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com">
-                            <img src="Images/icons/linkdin.png" alt="Linkdin-Icon">
-                        </a>
-                    </li>
+                    <li><a href="https://www.github.com" tabindex="0"><img src="Images/icons/github.webp"
+                                alt="GitHub Icon"></a></li>
+                    <li><a href="https://www.leetcode.com" tabindex="0"><img src="Images/icons/leetcode.webp"
+                                alt="LeetCode Icon"></a></li>
+                    <li><a href="https://www.linkedin.com" tabindex="0"><img src="Images/icons/linkdin.webp"
+                                alt="LinkedIn Icon"></a></li>
                 </ul>
             </div>
-
-            <input type="checkbox" id="menu-toggle" class="menu-toggle mobile-header">
-            <label for="menu-toggle" class="hamburger mobile-header">☰ About</label>
-            <nav>
-                <ul>
-                    <li><a href="./home.html">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="./skills.html">Skills</a></li>
-                    <li><a href="./blogs.html">Blogs</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="nav">
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="./home.html" tabindex="0">Home</a></li>
+                        <li><a href="./about.html" tabindex="0">About</a></li>
+                        <li><a href="./skills.html" tabindex="0">Skills</a></li>
+                        <li class="active"><a href="./blogs.html" tabindex="0">Blogs</a></li>
+                        <li><a href="./contact.html" tabindex="0">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
 
+        <div class="layout-tablet">
+            <div class="nav">
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="./home.html" tabindex="0">Home</a></li>
+                        <li><a href="./about.html" tabindex="0">About</a></li>
+                        <li><a href="./skills.html" tabindex="0">Skills</a></li>
+                        <li class="active"><a href="./blogs.html" tabindex="0">Blogs</a></li>
+                        <li><a href="./contact.html" tabindex="0">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="https://www.github.com" tabindex="0"><img src="Images/icons/github.webp"
+                                alt="GitHub Icon"></a></li>
+                    <li><a href="https://www.leetcode.com" tabindex="0"><img src="Images/icons/leetcode.webp"
+                                alt="LeetCode Icon"></a></li>
+                    <li><a href="https://www.linkedin.com" tabindex="0"><img src="Images/icons/linkdin.webp"
+                                alt="LinkedIn Icon"></a></li>
+                </ul>
+            </div>
+        </div>
 
+        <!-- Mobile Menu -->
+        <div class="layout-mobile">
+            <div>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle" tabindex="0">
+                <label for="menu-toggle" class="hamburger" tabindex="0">☰ Blogs</label>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="./home.html" tabindex="0">Home</a></li>
+                        <li><a href="about.html" tabindex="0">About</a></li>
+                        <li><a href="./skills.html" tabindex="0">Skills</a></li>
+                        <li class="current"><a href="./blogs.html" tabindex="0">Blogs</a></li>
+                        <li><a href="./contact.html" tabindex="0">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="links">
+                <ul>
+                    <li><a href="https://www.github.com" tabindex="0"><img src="Images/icons/github.webp"
+                                alt="GitHub Icon"></a></li>
+                    <li><a href="https://www.leetcode.com" tabindex="0"><img src="Images/icons/leetcode.webp"
+                                alt="LeetCode Icon"></a></li>
+                    <li><a href="https://www.linkedin.com" tabindex="0"><img src="Images/icons/linkdin.webp"
+                                alt="LinkedIn Icon"></a></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <main>
-        <section class="desktop tablet-port mobile-land">
-            <h2>My Favourite Reads</h2>
-            <article id="1">
-                <figure>
-                    <img src="Images/NatureBlog.png" alt="A beautiful nature scene with greenery">
-                    <figcaption>A tranquil moment captured in nature</figcaption>
-                </figure>
-                <h3>Title: The Serenity of Nature</h3>
-                <p class="date">Date: January 15, 2024</p>
-                <p class="author">Written by: Emma Greenfield</p>
-                <p class="body">This blog explores the profound beauty and calming effects of spending time in nature.
-                    From serene landscapes to the sounds of the wilderness, it emphasizes the importance of reconnecting
-                    with the natural world for mental well-being.</p>
-            </article>
-            <article id="2">
-                <figure class="tablet-picture">
-                    <img src="Images/FoodBlog.png" alt="Delicious dishes displayed on a table">
-                    <figcaption>A feast for the senses</figcaption>
-                </figure>
-                <h3>Title: Culinary Adventures</h3>
-                <p class="date">Date: February 10, 2024</p>
-                <p class="author">Written by: Daniel Cookswell</p>
-                <p class="body">Dive into the world of flavors with this blog, where culinary artistry meets
-                    storytelling. It showcases diverse cuisines, unique recipes, and tips for bringing the joy of
-                    cooking to your kitchen.</p>
-            </article>
-            <article id="3">
-                <figure>
-                    <img src="Images/WritingBlog.png" alt="An open notebook with a pen">
-                    <figcaption>Unleashing creativity through words</figcaption>
-                </figure>
-                <h3>Title: The Art of Storytelling</h3>
-                <p class="date">Date: March 5, 2024</p>
-                <p class="author">Written by: Clara Wordsworth</p>
-                <p class="body">This blog delves into the power of storytelling, offering insights on crafting
-                    compelling narratives, developing characters, and finding your unique voice as a writer.</p>
-            </article>
-        </section>
+        <div class="layout-desktop">
+            <div class="layout-desktop-blogs-main">
+                <div class="landscape">
+                    <section class="favorite-reads">
+                        <h2 tabindex="0">Favorite Reads</h2>
+                        <div class="grid-container">
+                            <article class="book-card" tabindex="0">
+                                <h2>The Serenity of Nature</h2>
+                                <h3>January 15, 2024<br>Emma Greenfield</h3>
+                                <p>
+                                    Step into a world of tranquility with this blog that uncovers the profound beauty
+                                    and therapeutic effects of connecting with nature. From lush green forests to the
+                                    gentle symphony of chirping birds and rustling leaves, it paints a vivid picture of
+                                    the calming embrace of the wilderness. Discover how immersing yourself in natural
+                                    landscapes can rejuvenate your mind, elevate your mood, and foster a deep sense of
+                                    inner peace. Explore tips for mindful walks, scenic escapes, and practices that
+                                    bring you closer to the earth, reminding us of the vital bond we share with the
+                                    natural world.
+                                </p>
+                                <button tabindex="0">Read</button>
+                            </article>
 
-        <section class="mobile-port">
-            <h2>My Favourite Reads</h2>
-            <ol>
-                <li>
-                    <h4 class="title">The Serenity of Nature</h4>
-                    <p class="Description">Exploring the beauty of nature and its role in mental well-being.</p>
-                    <p class="date">Date: January 15, 2024</p>
-                    <button>Read More</button>
-                </li>
-                <li>
-                    <h4 class="title">Culinary Adventures</h4>
-                    <p class="Description">A journey into flavors, cuisines, and cooking tips for food enthusiasts.</p>
-                    <p class="date">Date: February 10, 2024</p>
-                    <button>Read More</button>
-                </li>
-                <li>
-                    <h4 class="title">The Art of Storytelling</h4>
-                    <p class="Description">Insights into crafting narratives and finding your unique writer’s voice.</p>
-                    <p class="date">Date: March 5, 2024</p>
-                    <button>Read More</button>
-                </li>
-            </ol>
-        </section>
+                            <article class="book-card" tabindex="0">
+                                <h2>A Feast for the Senses</h2>
+                                <h3>February 10, 2024<br>Daniel Cookswell</h3>
+                                <p>
+                                    Get ready to tantalize your taste buds and ignite your culinary passion with this
+                                    vibrant blog that celebrates the art of cooking. Each post dives into a medley of
+                                    flavors, textures, and aromas from around the globe, showcasing diverse cuisines and
+                                    innovative recipes. With detailed step-by-step guides, pro tips, and stories behind
+                                    iconic dishes, it’s more than just a food blog—it's a journey through culture and
+                                    creativity. Whether you're a seasoned chef or a kitchen newbie, this blog will
+                                    inspire you to bring new energy and joy to your cooking adventures.
+                                </p>
+                                <button tabindex="0">Read</button>
+                            </article>
+
+                            <article class="book-card" tabindex="0">
+                                <h2>Travel Tales That Inspire</h2>
+                                <h3>March 12, 2015<br>John Doe</h3>
+                                <p>
+                                    Embark on a globe-trotting adventure with this blog, your guide to breathtaking
+                                    destinations and unforgettable journeys. From the hidden gems of quaint villages to
+                                    the dazzling energy of metropolitan cities, each post is a vivid travelogue designed
+                                    to spark your wanderlust. Learn tips for authentic travel experiences, discover
+                                    cultures beyond the guidebook, and find inspiration for your next adventure. Whether
+                                    you're dreaming of faraway places or planning your next getaway, this blog will
+                                    awaken the explorer in you.
+                                </p>
+                                <button tabindex="0">Read</button>
+                            </article>
+                            <article class="book-card" tabindex="0">
+                                <h2>An Excerpt from My Journal Entry (12.05.22)</h2>
+                                <h3>May 4, 2023<br>Ink A Verse</h3>
+                                <p>
+                                    While going through my old journal, I found a piece I had written almost exactly
+                                    last year. Thought I’d share it. <br> <br>
+
+                                    “…..Reading this only led me back to a question that I, like a million other people,
+                                    have been trying to find the answer to. Does the future already exist, or does it
+                                    change with every little movement? <br>
+                                    I have read about people who, hours or even days before their deaths, knew that they
+                                    would die soon. My maternal grandma… ”
+                                </p>
+                                <button tabindex="0">Read</button>
+                            </article>
+
+                            <article class="book-card" tabindex="0">
+                                <h2>Unleashing Creativity Through Words</h2>
+                                <h3>May 4, 2019<br>Howard Walowitz</h3>
+                                <p>
+                                    Unleash your storytelling potential with this insightful blog dedicated to the art
+                                    of narrative. Dive deep into the elements of great storytelling, from building
+                                    unforgettable characters to crafting immersive worlds that captivate readers. Packed
+                                    with writing exercises, inspirational anecdotes, and guidance on finding your unique
+                                    voice, it’s the perfect resource for aspiring authors and seasoned storytellers
+                                    alike. Whether you’re writing a novel, screenplay, or personal essay, this blog will
+                                    help you turn ideas into stories that resonate with your audience.
+                                </p>
+                                <button tabindex="0">Read</button>
+                            </article>
+
+                            <article class="book-card" tabindex="0">
+                                <h2>A Touch Better</h2>
+                                <h3>September 20, 2022<br>Scott Galloway</h3>
+                                <p>
+                                    My next book, Adrift: America in 100 Charts, comes out September 20. It's a
+                                    narrative
+                                    told through charts. <br> <br>
+
+                                    “…. The world is significantly wealthier, freer, healthier, and better educated than
+                                    it
+                                    was forty years ago. In 1980, over 40% of humanity lived in extreme poverty. Today,
+                                    less than 10% does. In 1980, 44% of humanity had no democratic rights. Today, it is
+                                    less than 25%. A child born in 1980 had a life expectancy of 63 years. A child born
+                                    today should live a decade longer. In 1980, 30% of people fifteen years and older
+                                    had no formal education. By 2015, that share had been cut in half. … ”
+                                </p>
+                                <button tabindex="0">Read</button>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="layout-tablet">
+            <div class="layout-tablet-blogs-main">
+                <div class="landscape">
+                    <article class="container-blogs" tabindex="0">
+                        <h2>Travel around the world</h2>
+                        <div>
+                            <p tabindex="0">Step into a world of tranquility with this blog that uncovers the profound
+                                beauty and therapeutic effects of connecting with nature. From lush green forests to the
+                                gentle symphony of chirping birds and rustling leaves, it paints a vivid picture of the
+                                calming embrace of the wilderness.
+                                <br>
+                                <a class="more" tabindex="0">read more</a>
+                            </p>
+                            <video controls loop autoplay muted width="65%" tabindex="0">
+                                <source src="Videos/night.mp4" type="video/mp4">
+                                <track src="captions/food.vtt" kind="captions" srclang="en" label="English">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </article>
+
+                    <article class="container-blogs" tabindex="0">
+                        <h2>Food</h2>
+                        <div>
+                            <p tabindex="0">
+                                Get ready to tantalize your taste buds and ignite your culinary passion with this
+                                vibrant blog that celebrates the art of cooking. Each post dives into a medley of
+                                flavors, textures, and aromas from around the globe, showcasing diverse cuisines and
+                                innovative recipes.
+                                <br>
+                                <a class="more" tabindex="0">read more</a>
+                            </p>
+                            <video controls loop autoplay muted width="65%" tabindex="0">
+                                <source src="Videos/food.mp4" type="video/mp4">
+                                <div class="video-transcript" tabindex="0">
+                                    Your browser does not support the video tag.
+                                </div>
+                            </video>
+                        </div>
+                    </article>
+                </div>
+                <div class="portrait">
+                    <section class="read-item">
+                        <h2 tabindex="0">My Favorite Reads</h2>
+                        <article tabindex="0">
+                            <h3>Food</h3>
+                            <div class="content-wrapper">
+                                <p tabindex="0">
+                                    Get ready to tantalize your taste buds and ignite your culinary passion with
+                                    this vibrant blog that celebrates the art of cooking. Each post dives into a
+                                    medley of flavors, textures, and aromas from around the globe, intertwining
+                                    diverse cultures and irresistible recipes.
+                                </p>
+                                <figure>
+                                    <img src="Images/Foodblog.webp" width="155" alt="Nature scene">
+                                    <figcaption></figcaption>
+                                </figure>
+                            </div>
+                        </article>
+                        <article tabindex="0">
+                            <h3>Stories</h3>
+                            <div class="content-wrapper">
+                                <p tabindex="0">
+                                    Unleash your storytelling potential with this remarkable blog dedicated to
+                                    the art of travel tales. Dive deep into inspiring anecdotes and awe-inspiring
+                                    home-building unforgettable connections that captivate readers.
+                                </p>
+                                <figure>
+                                    <img src="Images/WritingBlog.webp" width="155" alt="Nature scene">
+                                    <figcaption></figcaption>
+                                </figure>
+                            </div>
+                        </article>
+                        <article tabindex="0">
+                            <h3>Nature</h3>
+                            <div class="content-wrapper">
+                                <p tabindex="0">
+                                    Step into a world of innovation with this blog that celebrates the profound
+                                    interplay of human creativity and the beauty of the natural world. From lush
+                                    landscapes to man-made wonders, each post brings you closer to the essence of
+                                    the wilderness.
+                                </p>
+                                <figure>
+                                    <img src="Images/NatureBlog.webp" width="155" alt="Nature scene">
+                                    <figcaption></figcaption>
+                                </figure>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="layout-mobile">
+            <div class="layout-mobile-blogs-main">
+                <div class="landscape">
+                    <section class="favorite-reads">
+                        <h2 tabindex="0">Favorite Reads</h2>
+                        <div class="grid-container">
+                            <article class="book-card" tabindex="0">
+                                <h3>Nature</h3>
+                                <p tabindex="0">
+                                    From lush green forests to the gentle symphony of chirping birds and rustling
+                                    leaves, it paints a vivid
+                                    picture of the calming embrace of the wilderness.
+                                </p>
+                                <button tabindex="0">Read</button>
+                            </article>
+                            <article class="book-card" tabindex="0">
+                                <h3>Food</h3>
+                                <p tabindex="0">
+                                    Detailed step-by-step guides, pro tips, and stories behind iconic dishes. It’s
+                                    more
+                                    than just a food blog—
+                                    it’s a journey through culture and creativity.
+                                </p>
+                                <button tabindex="0">Read</button>
+                            </article>
+                            <article class="book-card" tabindex="0">
+                                <h3>Stories</h3>
+                                <p tabindex="0">
+                                    Dive deep into the elements of great storytelling, from building unforgettable
+                                    characters to crafting
+                                    immersive worlds that captivate readers.
+                                </p>
+                                <button tabindex="0">Read</button>
+                            </article>
+                            <article class="book-card" tabindex="0">
+                                <h3>Travels</h3>
+                                <p tabindex="0">
+                                    Embark on a globe-trotting adventure with this blog, your guide to breathtaking
+                                    destinations and
+                                    unforgettable journeys.
+                                </p>
+                                <button tabindex="0">Read</button>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="portrait">
+                    <section class="favorite-reads">
+                        <h2 tabindex="0">My Favorite Reads</h2>
+                        <article class="book-card" tabindex="0">
+                            <h3>1. Wanderlust Chronicles Travel Tales That Inspire</h3>
+                            <p tabindex="0">Date: January 15, 2024<br>Author: Emma Greenfield</p>
+                            <button tabindex="0">More</button>
+                        </article>
+                        <article class="book-card" tabindex="0">
+                            <h3>2. A Feast for the Senses:</h3>
+                            <p tabindex="0">Date: February 10, 2021<br>Author: Daniel Cookswell</p>
+                            <button tabindex="0">More</button>
+                        </article>
+                        <article class="book-card" tabindex="0">
+                            <h3>3. Unleashing creativity through words</h3>
+                            <p tabindex="0">Date: March 12, 2020<br>Author: Jim Hortins</p>
+                            <button tabindex="0">More</button>
+                        </article>
+                        <article class="book-card" tabindex="0">
+                            <h3>4. A Feast for the Senses:</h3>
+                            <p tabindex="0">Date: May 4, 2019<br>Author: Howard Walowitz</p>
+                            <button tabindex="0">More</button>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
-
-        <p>All rights reserved Kibreab C.</p>
+        <div>
+            <p tabindex="0">&copy; 2024 Kibreab C. All rights reserved.</p>
+        </div>
         <div class="socials">
             <ul>
-                <li>
-                    <a href="https://www.github.com">
-                        <img src="Images/icons/github.png" alt="Git-Icon">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.leetcode.com">
-                        <img src="Images/icons/leetcode.png" alt="Leetcode-Icon">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com">
-                        <img src="Images/icons/linkdin.png" alt="Linkdin-Icon">
-                    </a>
-                </li>
+                <li><a href="https://www.github.com" tabindex="0"><img src="Images/icons/github.webp"
+                            alt="GitHub Icon"></a></li>
+                <li><a href="https://www.leetcode.com" tabindex="0"><img src="Images/icons/leetcode.webp"
+                            alt="LeetCode Icon"></a></li>
+                <li><a href="https://www.linkedin.com" tabindex="0"><img src="./Images/icons/linkdin.webp"
+                            alt="LinkedIn Icon"></a></li>
             </ul>
         </div>
     </footer>

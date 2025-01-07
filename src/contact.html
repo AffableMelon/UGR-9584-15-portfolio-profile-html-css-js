@@ -4,143 +4,260 @@
 <head>
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>Blogs</title>
+    <link rel="stylesheet" href="./css/test2.css">
+    <title>Contact</title>
 </head>
 
 <body>
     <header>
-        <div class="desktop-header tablet-header mobile-header">
-            <div class="desktop-socials tablet-socials">
+        <!-- Social Links -->
+        <div class="layout-desktop">
+            <div class="links">
                 <ul>
-                    <li>
-                        <a href="https://www.github.com">
-                            <img src="Images/icons/github.png" alt="Git-Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.leetcode.com">
-                            <img src="Images/icons/leetcode.png" alt="Leetcode-Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com">
-                            <img src="Images/icons/linkdin.png" alt="Linkdin-Icon">
-                        </a>
-                    </li>
+                    <li><a href="https://www.github.com" tabindex="0"><img src="Images/icons/github.webp"
+                                alt="GitHub Icon"></a></li>
+                    <li><a href="https://www.leetcode.com" tabindex="0"><img src="Images/icons/leetcode.webp"
+                                alt="LeetCode Icon"></a></li>
+                    <li><a href="https://www.linkedin.com" tabindex="0"><img src="Images/icons/linkdin.webp"
+                                alt="LinkedIn Icon"></a></li>
+                </ul>
+            </div>
+            <div class="nav">
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="./home.html" tabindex="0">Home</a></li>
+                        <li><a href="./about.html" tabindex="0">About</a></li>
+                        <li><a href="./skills.html" tabindex="0">Skills</a></li>
+                        <li><a href="./blogs.html" tabindex="0">Blogs</a></li>
+                        <li class="active"><a href="./contact.html" tabindex="0">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="layout-tablet">
+            <div class="nav">
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="./home.html" tabindex="0">Home</a></li>
+                        <li><a href="./about.html" tabindex="0">About</a></li>
+                        <li><a href="./skills.html" tabindex="0">Skills</a></li>
+                        <li><a href="./blogs.html" tabindex="0">Blogs</a></li>
+                        <li class="active"><a href="./contact.html" tabindex="0">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="https://www.github.com" tabindex="0"><img src="Images/icons/github.webp"
+                                alt="GitHub Icon"></a></li>
+                    <li><a href="https://www.leetcode.com" tabindex="0"><img src="Images/icons/leetcode.webp"
+                                alt="LeetCode Icon"></a></li>
+                    <li><a href="https://www.linkedin.com" tabindex="0"><img src="Images/icons/linkdin.webp"
+                                alt="LinkedIn Icon"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="layout-mobile">
+            <div>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle" tabindex="0">
+                <label for="menu-toggle" class="hamburger" tabindex="0">☰ Contact</label>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="./home.html" tabindex="0">Home</a></li>
+                        <li><a href="about.html" tabindex="0">About</a></li>
+                        <li><a href="./skills.html" tabindex="0">Skills</a></li>
+                        <li><a href="./blogs.html" tabindex="0">Blogs</a></li>
+                        <li class="current"><a href="./contact.html" tabindex="0">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="links">
+                <ul>
+                    <li><a href="https://www.github.com" tabindex="0"><img src="Images/icons/github.webp"
+                                alt="GitHub Icon"></a></li>
+                    <li><a href="https://www.leetcode.com" tabindex="0"><img src="Images/icons/leetcode.webp"
+                                alt="LeetCode Icon"></a></li>
+                    <li><a href="https://www.linkedin.com" tabindex="0"><img src="Images/icons/linkdin.webp"
+                                alt="LinkedIn Icon"></a></li>
                 </ul>
             </div>
 
-            <input type="checkbox" id="menu-toggle" class="menu-toggle mobile-header">
-            <label for="menu-toggle" class="hamburger mobile-header">☰ Contact</label>
-            <nav>
-                <ul>
-                    <li><a href="./home.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./skills.html">Skills</a></li>
-                    <li><a href="./blogs.html">Blogs</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+
         </div>
-
-
     </header>
 
     <main>
-        <section class="desktop-contact mobile-port mobile-land">
-            <h2> Reach Out! </h2>
-            <p>Send me an email and I will reply in 2 buisness days! </p>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your full name" required>
+        <div class="layout-desktop">
+            <div class="layout-desktop-contact-main">
+                <div class="contact-form-desktop">
+                    <h2>Contact Me!</h2>
+                    <p>Send me an email and I will reply in 2 business days!</p>
+                    <form>
+                        <label for="name-desktop">Name</label>
+                        <input type="text" id="name-desktop" name="name" placeholder="Your name" required>
+                        <label for="surname-desktop">Surname</label>
+                        <input type="text" id="surname-desktop" name="surname" placeholder="Your surname" required>
+                        <label for="email-desktop">Email</label>
+                        <input type="email" id="email-desktop" name="email" placeholder="Your email" required>
+                        <label for="message-desktop">Message</label>
+                        <textarea id="message-desktop" name="message" placeholder="Your message here"
+                            required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Your email address" required>
+        <div class="layout-tablet">
+            <div class="layout-tablet-contact-main">
+                <div class="landscape">
+                    <h2>Reach Out!</h2>
+                    <p>I'll get back to you as soon as it's convenient for me!</p>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" placeholder="Write your message here..."
-                    required></textarea>
+                    <div class="table-wrapper" style="border-radius: 8px; 
+    overflow: hidden; width: 100%;">
+                        <table class="info-table">
+                            <tr>
+                                <th>Email</th>
+                                <td>ckibreab@protonmail.com</td>
+                            </tr>
+                            <tr>
+                                <th>Address</th>
+                                <td>Ethiopia, Addis Ababa Mexico. PO: 0000</td>
+                            </tr>
+                            <tr>
+                                <th>Phone Number</th>
+                                <td>+251911253234</td>
+                            </tr>
+                        </table>
+                    </div>
 
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
 
-        <section class="tablet">
-            <h2>Reach out!</h2>
-            <ol class="portrait">
-                <li>
-                    Email: appsidontuse@gmail.com
-                </li>
+                    <div class="availability">
+                        <div class="availability-item">
+                            <img src="Images/icons/Sunrise.svg" alt="Sunrise Icon">
+                            <p>Monday-Saturday 6:00 GMT</p>
+                        </div>
+                        <div class="availability-item">
+                            <img src="Images/icons/Sunset.svg" alt="Sunset Icon">
+                            <p>Monday-Friday 18:00 GMT</p>
+                        </div>
+                        <div class="availability-item">
+                            <img src="Images/icons/Sunset.svg" alt="Sunset Icon">
+                            <p>Saturday 12:00 GMT</p>
+                        </div>
+                    </div>
 
-                <li>
-                    Phone: +251987432578
-                </li>
-                <li>
-                    Address: Ethiopia, Addis Ababa
-                </li>
-            </ol>
-
-            <table class="landscape">
-                <thead>
-                    <tr>
-                        <th>
-
-                        </th>
-                        <th>
-
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            E-mail
-                        </td>
-                        <td>
-                            reachout@email.com
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Phone Number
-                        </td>
-                        <td>
-                            +251989092818
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
+                </div>
+                <div class="portrait">
+                    <h2> Reach Out!</h2>
+                    <p>Send me a message in either of the following and I’ll reach out as soon as possible!</p>
+                    <ol>
+                        <li>Email
+                            <ul style="padding-left: 10%;">
+                                <li>
+                                    ckibreab@gmai.com
+                                </li>
+                                <li>
+                                    devsKibreab@proton.com
+                                </li>
+                                <li> mailMe@kibreabDev.com</li>
+                            </ul>
+                        </li>
+                        <li>Phone
+                            <ul>
+                                <li>
+                                    +251911253234
+                                </li>
+                                <li>
+                                    +251911525512
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
                             Address
-                        </td>
-                        <td>
-                            Ethiopia Addis Ababa Mexico
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+                            <ul>
+                                <li>
+                                    Ethiopia, Addis Ababa Ayat
+                                </li>
 
+                                <li>
+                                    PO-Box: 0000
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="layout-mobile">
+            <div class="layout-mobile-contact-main">
+                <div class="landscape">
+                    <div class="social-contact">
+                        <h2>Reach out!</h2>
+                        <p>Send me a message or follow me on my social accounts!</p>
+                        <p>Find me on</p>
+                        <div class="contact-links">
+                            <div class="link-card">
+                                <p>
+                                    Telegram <a href="#" target="_blank">here</a>
+                                </p>
+                            </div>
+                            <div class="link-card">
+                                <p>
+                                    X (formerly Twitter) <a href="#" target="_blank">here</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="alternative-contact">
+                            <div class="alternative-card">
+                                <p>Alternatively! Send me an email</p>
+                                <p>temppm@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portrait">
+                    <h2>Reach Out</h2>
+                    <p>Send me an email and I will reply in 2 business days!</p>
+                    <div class="contact-form-mobile">
+                        <form>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Howard" required>
+                            <label for="surname">Surname</label>
+                            <input type="text" id="surname" name="surname" placeholder="Walowitz" required>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Wolowizard@gmail.com" required>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Something you want to say goes here!"
+                                required></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
     </main>
     <footer>
-
-        <p>All rights reserved Kibreab C.</p>
+        <div>
+            <p tabindex="0">&copy; 2024 Kibreab C. All rights reserved.</p>
+        </div>
         <div class="socials">
             <ul>
-                <li>
-                    <a href="https://www.github.com">
-                        <img src="Images/icons/github.png" alt="Git-Icon">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.leetcode.com">
-                        <img src="Images/icons/leetcode.png" alt="Leetcode-Icon">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com">
-                        <img src="Images/icons/linkdin.png" alt="Linkdin-Icon">
-                    </a>
-                </li>
+                <li><a href="https://www.github.com" tabindex="0"><img src="Images/icons/github.webp"
+                            alt="GitHub Icon"></a></li>
+                <li><a href="https://www.leetcode.com" tabindex="0"><img src="Images/icons/leetcode.webp"
+                            alt="LeetCode Icon"></a></li>
+                <li><a href="https://www.linkedin.com" tabindex="0"><img src="./Images/icons/linkdin.webp"
+                            alt="LinkedIn Icon"></a></li>
             </ul>
         </div>
     </footer>
