@@ -619,6 +619,37 @@ main .layout-mobile-skills-main .landscape .skills-table th{
     width: 100%;
   }
 
+  main .layout-mobile-home-main div.landscape  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 040px; */
+    /* background-color: #fdfbf6; */
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+
+   main .layout-mobile-home-main div.landscape div.text-content {
+  max-width: 60%;
+  margin-right:2% ;
+}
+
+ main .layout-mobile-home-main div.landscape .text-content h1 {
+  font-size: 1.5rem;
+  color: #004080;
+  /* margin-bottom: 10px; */
+}
+
+ main .layout-mobile-home-main div.landscape .image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+}
+
+
+
   header nav ul li.current a {
     color: var(--dark-secondary-color);
   }
