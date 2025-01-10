@@ -129,7 +129,7 @@ footer ul {
 }
 
 /* Mobile - Portrait */
-@media screen and (max-width: 640px) and (orientation: portrait) {
+@media only screen and (max-width: 640px) and (orientation: portrait) {
   /* Styles for mobile devices in portrait mode */
     html, body {
     height: 100%;
@@ -177,7 +177,7 @@ body {
   }
 
   header,
-  body,
+
   .layout-mobile {
     display: block;
   }
@@ -433,7 +433,7 @@ body {
 }
 
 /* Mobile - Landscape */
-@media screen and (max-width: 640px) and (orientation: landscape) {
+@media only screen and (max-width: 849px) and (orientation: landscape) {
   /* Styles for mobile devices in landscape mode */
   body {
     font-family: "Inter", Arial, sans-serif;
@@ -647,7 +647,10 @@ main .layout-mobile-skills-main .landscape .skills-table th{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-left: 20px;
 }
-
+main  .layout-mobile-home-main div.landscape .text-content button{
+width: 164px;
+height: 40px;
+}
 
 
   header nav ul li.current a {
@@ -790,7 +793,7 @@ main .layout-mobile-skills-main .landscape .skills-table th{
 }
 }
 /* Tablet - Portrait */
-@media screen and (min-width: 640px) and (max-width: 1023px) and (orientation: portrait) {
+@media only screen and  (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   header div.layout-desktop,
   .layout-mobile {
     display: none;
@@ -993,7 +996,7 @@ main .layout-mobile-skills-main .landscape .skills-table th{
 }
 
 /* Tablet - Landscape */
-@media screen and (min-width: 641px) and (max-width: 1023px) and (orientation: landscape) {
+@media only screen and (min-width: 850px) and (max-width: 1400px) and (orientation: landscape) {
   /* Styles for tablets in landscape mode */
   header div.layout-desktop,
   .layout-mobile {
@@ -1216,9 +1219,15 @@ main .layout-mobile-skills-main .landscape .skills-table th{
 
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px ) {
   main .layout-desktop {
     margin: 4% 2%;
+  }
+      main {
+    flex: 1; /* This makes the main content take up the remaining space */
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
   }
 
   main .layout-desktop-home-main {
